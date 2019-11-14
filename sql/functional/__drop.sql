@@ -1,0 +1,2 @@
+
+DROP SCHEMA IF EXISTS :"pgver_schema" CASCADE;
