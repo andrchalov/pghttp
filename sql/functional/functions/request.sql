@@ -32,7 +32,7 @@ try:
     r.raise_for_status()
 
   return (json.dumps(dict(r.cookies)), json.dumps(dict(r.headers)), r.status_code, r.text)
-except (requests.exceptions.HTTPError, e):
+except requests.exceptions.HTTPError as e:
   plpy.error(e, detail=r.text)
 $function$;
 -------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ try:
     r.raise_for_status()
 
   return (json.dumps(dict(r.cookies)), json.dumps(dict(r.headers)), r.status_code, r.text)
-except (requests.exceptions.HTTPError, e):
+except requests.exceptions.HTTPError as e:
   plpy.error(e, detail=r.text)
 $function$;
 -------------------------------------------------------------------------------
@@ -110,7 +110,7 @@ try:
     r.raise_for_status()
 
   return (json.dumps(dict(r.cookies)), json.dumps(dict(r.headers)), r.status_code, r.text)
-except (requests.exceptions.HTTPError, e):
+except requests.exceptions.HTTPError as e:
   plpy.error(e, detail=r.text)
 $function$;
 -------------------------------------------------------------------------------
@@ -147,7 +147,7 @@ try:
     r.raise_for_status()
 
   return (json.dumps(dict(r.cookies)), json.dumps(dict(r.headers)), r.status_code, r.text)
-except (requests.exceptions.HTTPError, e):
+except requests.exceptions.HTTPError as e:
   plpy.error(e, detail=r.text)
 $function$;
 -------------------------------------------------------------------------------
