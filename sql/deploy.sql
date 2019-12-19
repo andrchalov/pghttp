@@ -6,7 +6,6 @@
 
 \set ON_ERROR_STOP
 
-\set pgver_schema :pgver_schema
-SELECT CASE WHEN :'pgver_schema'=':pgver_schema' THEN 'http' ELSE :'pgver_schema' END AS "pgver_schema" \gset
+\set pgver_schema pghttp
 
 \ir pgver.sql
